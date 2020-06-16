@@ -1,0 +1,28 @@
+Jun 16 18:09:26.935 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Jun 16 18:09:26.939 HYPERVISOR: Started on IP = localhost, TCP port = 56215.
+Jun 16 18:09:27.367 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 16 18:09:27.368 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Nandini\GNS3\projects\dmvpn_config_rip-1\project-files\dynamips 
+Jun 16 18:09:27.369 GENERAL: working_dir=C:\Users\Nandini\GNS3\projects\dmvpn_config_rip-1\project-files\dynamips
+Jun 16 18:09:27.370 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Nandini\GNS3\projects\dmvpn_config_rip-1\project-files\dynamips\eb02fc62-03da-43a1-b614-853e87d61be9 
+Jun 16 18:09:27.442 GENERAL: working_dir=C:\Users\Nandini\GNS3\projects\dmvpn_config_rip-1\project-files\dynamips\eb02fc62-03da-43a1-b614-853e87d61be9
+Jun 16 18:09:27.443 HYPERVISOR: exec_cmd: vm create Spoke_2 4 c3725 
+Jun 16 18:09:27.449 VM: VM Spoke_2 created.
+Jun 16 18:09:27.450 HYPERVISOR: exec_cmd: vm set_con_tcp_port Spoke_2 5011 
+Jun 16 18:09:27.451 HYPERVISOR: exec_cmd: c3725 get_mac_addr Spoke_2 
+Jun 16 18:09:27.453 HYPERVISOR: exec_cmd: vm set_disk0 Spoke_2 0 
+Jun 16 18:09:27.454 HYPERVISOR: exec_cmd: vm set_exec_area Spoke_2 64 
+Jun 16 18:09:27.455 HYPERVISOR: exec_cmd: vm get_status Spoke_2 
+Jun 16 18:09:27.456 HYPERVISOR: exec_cmd: vm set_idle_pc Spoke_2 0x60bf8ba0 
+Jun 16 18:09:27.459 HYPERVISOR: exec_cmd: vm set_ios Spoke_2 C:/Users/Nandini/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Jun 16 18:09:27.459 HYPERVISOR: exec_cmd: c3725 set_mac_addr Spoke_2 c204.3f88.0000 
+Jun 16 18:09:27.462 HYPERVISOR: exec_cmd: vm set_nvram Spoke_2 256 
+Jun 16 18:09:27.462 HYPERVISOR: exec_cmd: vm get_status Spoke_2 
+Jun 16 18:09:27.463 HYPERVISOR: exec_cmd: vm slot_add_binding Spoke_2 1 0 NM-4T 
+Jun 16 18:09:27.464 HYPERVISOR: exec_cmd: vm get_status Spoke_2 
+Jun 16 18:09:27.465 HYPERVISOR: exec_cmd: vm slot_add_binding Spoke_2 2 0 NM-16ESW 
+Jun 16 18:09:31.696 HYPERVISOR: exec_cmd: nio create_udp udp-152d2965-ec64-4045-9446-22bc6cc9833f 10016 127.0.0.1 10017 
+Jun 16 18:09:31.962 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Spoke_2 1 0 udp-152d2965-ec64-4045-9446-22bc6cc9833f 
+Jun 16 18:09:31.965 HYPERVISOR: exec_cmd: vm get_status Spoke_2 
+Jun 16 18:09:32.072 HYPERVISOR: exec_cmd: nio create_udp udp-7a95eeae-d8da-4150-9e90-e66ab82ad148 10020 127.0.0.1 10021 
+Jun 16 18:09:32.150 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Spoke_2 0 0 udp-7a95eeae-d8da-4150-9e90-e66ab82ad148 
+Jun 16 18:09:32.151 HYPERVISOR: exec_cmd: vm get_status Spoke_2 

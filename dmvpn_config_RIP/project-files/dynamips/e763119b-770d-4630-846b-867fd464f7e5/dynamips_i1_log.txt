@@ -1,0 +1,42 @@
+Jun 16 18:09:25.116 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Jun 16 18:09:25.117 HYPERVISOR: Started on IP = localhost, TCP port = 56204.
+Jun 16 18:09:25.428 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 16 18:09:25.445 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Nandini\GNS3\projects\dmvpn_config_rip-1\project-files\dynamips 
+Jun 16 18:09:25.514 GENERAL: working_dir=C:\Users\Nandini\GNS3\projects\dmvpn_config_rip-1\project-files\dynamips
+Jun 16 18:09:25.518 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Nandini\GNS3\projects\dmvpn_config_rip-1\project-files\dynamips\e763119b-770d-4630-846b-867fd464f7e5 
+Jun 16 18:09:25.518 GENERAL: working_dir=C:\Users\Nandini\GNS3\projects\dmvpn_config_rip-1\project-files\dynamips\e763119b-770d-4630-846b-867fd464f7e5
+Jun 16 18:09:25.519 HYPERVISOR: exec_cmd: vm create HUB 1 c3725 
+Jun 16 18:09:25.522 VM: VM HUB created.
+Jun 16 18:09:25.522 HYPERVISOR: exec_cmd: vm set_con_tcp_port HUB 5008 
+Jun 16 18:09:25.524 HYPERVISOR: exec_cmd: c3725 get_mac_addr HUB 
+Jun 16 18:09:25.525 HYPERVISOR: exec_cmd: vm set_disk0 HUB 0 
+Jun 16 18:09:25.525 HYPERVISOR: exec_cmd: vm set_exec_area HUB 64 
+Jun 16 18:09:25.526 HYPERVISOR: exec_cmd: vm get_status HUB 
+Jun 16 18:09:25.527 HYPERVISOR: exec_cmd: vm set_idle_pc HUB 0x60bf8ba0 
+Jun 16 18:09:25.556 HYPERVISOR: exec_cmd: vm set_ios HUB C:/Users/Nandini/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Jun 16 18:09:25.560 HYPERVISOR: exec_cmd: c3725 set_mac_addr HUB c201.0200.0000 
+Jun 16 18:09:25.561 HYPERVISOR: exec_cmd: vm set_nvram HUB 256 
+Jun 16 18:09:25.562 HYPERVISOR: exec_cmd: vm get_status HUB 
+Jun 16 18:09:25.562 HYPERVISOR: exec_cmd: vm slot_add_binding HUB 1 0 NM-4T 
+Jun 16 18:09:25.563 HYPERVISOR: exec_cmd: vm get_status HUB 
+Jun 16 18:09:25.564 HYPERVISOR: exec_cmd: vm slot_add_binding HUB 2 0 NM-16ESW 
+Jun 16 18:09:28.762 HYPERVISOR: exec_cmd: nio create_udp udp-0d242c39-7d86-440d-8f43-4255f076a6d1 10002 127.0.0.1 10003 
+Jun 16 18:09:30.828 HYPERVISOR: exec_cmd: vm slot_add_nio_binding HUB 1 0 udp-0d242c39-7d86-440d-8f43-4255f076a6d1 
+Jun 16 18:09:30.829 HYPERVISOR: exec_cmd: vm get_status HUB 
+Jun 16 18:09:32.370 HYPERVISOR: exec_cmd: nio create_udp udp-7cc951ec-61ac-4c86-b8d3-ccde1a92331c 10024 127.0.0.1 10025 
+Jun 16 18:09:32.374 HYPERVISOR: exec_cmd: vm slot_add_nio_binding HUB 0 0 udp-7cc951ec-61ac-4c86-b8d3-ccde1a92331c 
+Jun 16 18:09:32.374 HYPERVISOR: exec_cmd: vm get_status HUB 
+Jun 16 18:09:59.171 HYPERVISOR: exec_cmd: vm create Ghost 0 c3725 
+Jun 16 18:09:59.175 VM: VM Ghost created.
+Jun 16 18:09:59.177 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/Nandini/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Jun 16 18:09:59.180 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Jun 16 18:09:59.182 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost 'C:\Users\Nandini\GNS3\projects\dmvpn_config_rip-1\project-files\dynamips\c3725-adventerprisek9-mz124-15.image-128.ghost' 
+Jun 16 18:09:59.183 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jun 16 18:09:59.185 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+Jun 16 18:09:59.186 HYPERVISOR: exec_cmd: vm start Ghost 
+Jun 16 18:09:59.545 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Jun 16 18:09:59.599 VM: VM Ghost shutdown.
+Jun 16 18:09:59.599 VM: VM Ghost destroyed.
+Jun 16 18:09:59.606 HYPERVISOR: exec_cmd: vm get_status HUB 
+Jun 16 18:09:59.610 HYPERVISOR: exec_cmd: vm set_config HUB configs\i1_startup-config.cfg 
+Jun 16 18:09:59.610 HYPERVISOR: exec_cmd: vm start HUB 
